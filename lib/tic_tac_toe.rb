@@ -49,8 +49,8 @@ else
   end
  end
  
- def turn_count()
-   binding.pry
+ def turn_count(board)
+ 
   counter = 0 
   board.each do |index|
     if index == "X" || index == "O"
@@ -93,7 +93,8 @@ end
   end 
   
   def draw?(board)
-    if full?(board) == true && !won?(board)
+    if full?(board) == true && won?(board)
+        binding.pry
       return true
     else
       return false
