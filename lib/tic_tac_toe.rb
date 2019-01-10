@@ -50,7 +50,7 @@ else
  end
  
  def turn_count()
-   bunding.pry
+   binding.pry
   counter = 0 
   board.each do |index|
     if index == "X" || index == "O"
