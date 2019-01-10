@@ -93,8 +93,9 @@ end
   end 
   
   def draw?(board)
+     binding.pry
     if full?(board) == true && won?(board)
-        binding.pry
+       
       return true
     else
       return false
